@@ -73,7 +73,7 @@ function search() {
         url: `https://booking-com.p.rapidapi.com/v1/hotels/locations?name=${place}&locale=en-us`,
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': '0062aea783mshc68ceef135c880ap15e630jsnfc9dd8af30d6',
+            'X-RapidAPI-Key': '',
             'X-RapidAPI-Host': 'booking-com.p.rapidapi.com'
         },
         success: function(location) {
@@ -84,7 +84,7 @@ function search() {
                 url: hotelSearchUrl,
                 method: 'GET',
                 headers: {
-                    'X-RapidAPI-Key': '0062aea783mshc68ceef135c880ap15e630jsnfc9dd8af30d6',
+                    'X-RapidAPI-Key': '',
                     'X-RapidAPI-Host': 'booking-com.p.rapidapi.com'
                 },
                 success: function(response) {

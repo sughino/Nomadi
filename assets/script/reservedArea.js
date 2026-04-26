@@ -214,7 +214,7 @@ $(document).on('click', '.trip-container', function(event) {
             <h5>(click on the monument for more information)</h5>
             <i class="bi bi-x icon" id="close-modal"></i>
         `);
-        var apiUrl = `https://maps.googleapis.com/maps/api/place/textsearch/json?key=AIzaSyC-cr4WB040peE5Flybbv7RXfx33wYfzBo&query=tourist+attractions+near+${$(this).find('.location').text()}&language=en`;
+        var apiUrl = ``;
         $.ajax({
             url: apiUrl,
             dataType: "json",

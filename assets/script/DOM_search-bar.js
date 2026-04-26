@@ -66,7 +66,7 @@ $('#place').on('input', function() {
         $('.place-input-container').find('span').hide();
         var inputTerm = $(this).val();
         $.ajax({
-            url: "https://maps.googleapis.com/maps/api/place/autocomplete/json",
+            url: "",
             method: "GET",
             dataType: "json",
             data: {

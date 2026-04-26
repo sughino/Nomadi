@@ -1,4 +1,4 @@
-const key = '0062aea783mshc68ceef135c880ap15e630jsnfc9dd8af30d6';
+const key = '';
 
 var place = localStorage.getItem('place');
 var adults = localStorage.getItem('adults');
@@ -16,7 +16,7 @@ $.ajax({
 	url: `https://booking-com.p.rapidapi.com/v2/hotels/details?currency=USD&locale=en-us&checkout_date=${end}&hotel_id=${hotel}&checkin_date=${start}`,
 	method: 'GET',
 	headers: {
-		'X-RapidAPI-Key': '0062aea783mshc68ceef135c880ap15e630jsnfc9dd8af30d6',
+		'X-RapidAPI-Key': '',
 		'X-RapidAPI-Host': 'booking-com.p.rapidapi.com'
 	},
     success: function(details) {
@@ -26,7 +26,7 @@ $.ajax({
             url: `https://booking-com.p.rapidapi.com/v2/hotels/description?hotel_id=${hotel}&locale=en-us`,
             method: 'GET',
             headers: {
-                'X-RapidAPI-Key': '0062aea783mshc68ceef135c880ap15e630jsnfc9dd8af30d6',
+                'X-RapidAPI-Key': '',
                 'X-RapidAPI-Host': 'booking-com.p.rapidapi.com'
             },
             success: function(description) {
@@ -36,7 +36,7 @@ $.ajax({
                     url: `https://booking-com.p.rapidapi.com/v1/hotels/reviews?locale=en-us&sort_type=SORT_MOST_RELEVANT&hotel_id=${hotel}`,
                     method: 'GET',
                     headers: {
-                        'X-RapidAPI-Key': '0062aea783mshc68ceef135c880ap15e630jsnfc9dd8af30d6',
+                        'X-RapidAPI-Key': '',
                         'X-RapidAPI-Host': 'booking-com.p.rapidapi.com'
                     },
                     success: function(reviews) {
@@ -46,7 +46,7 @@ $.ajax({
                             url: `https://booking-com.p.rapidapi.com/v1/hotels/photos?hotel_id=${hotel}&locale=en-us`,
                             method: 'GET',
                             headers: {
-                                'X-RapidAPI-Key': '0062aea783mshc68ceef135c880ap15e630jsnfc9dd8af30d6',
+                                'X-RapidAPI-Key': '',
                                 'X-RapidAPI-Host': 'booking-com.p.rapidapi.com'
                             },
                             success: function(photos) { 
