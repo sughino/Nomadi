@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/favicon-light.svg" type="image/x-icon" media="(prefers-color-scheme: light)">
+    <link rel="shortcut icon" href="assets/img/favicon.svg" type="image/x-icon" media="(prefers-color-scheme: dark)">
+    <title>Nomadi</title>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/script/DOM_search-bar.js" defer></script>
+    <script type="text/javascript" src="assets/script/DOM_welcome_animation.js" defer></script>
+    <script type="text/javascript" src="assets/script/DOM_suggestion_place.js" defer></script>
+    <script type="text/javascript" src="assets/script/DOM_footer.js" defer></script>
+    <script type="text/javascript" src="assets/script/sendCookie.js"></script>
+    <script type="text/javascript" src="assets/script/modal.js" defer></script>
+    <script type="text/javascript" src="assets/script/verifyLog.js" defer></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/style/reset.css">
+    <link rel="stylesheet" href="assets/style/globalSettings.css">
+    <link rel="stylesheet" href="assets/style/searchBarSettings.css">
+    <link rel="stylesheet" href="assets/style/mainPage.css">
+    <link rel="stylesheet" href="assets/style/modal.css">
+</head>
+<body>
+    <header>
+        <img src="assets/img/nomadi.svg" alt="nomadi-icon" class="nomadi-icon">
+        <button id="open-modal"><i class="bi bi-person-circle icon"></i><span class="username">login</span></button>
+        <div class="login-menu-container">
+            <button onclick="myTravels()"><p>my travels</p></button><hr>
+            <button onclick="reservedPage()"><p>my account</p></button><hr>
+            <button onclick="logout()"><p>log out</p></button>
+        </div>
+    </header>
+
+    <main>
+        <div class="title-search">
+            <h2 class="welcome-animation">W</h2>
+            <form class="search-bar-form" method="post" autocomplete="off"></form>
+        </div>
+
+        <div class="title-suggestion">
+            <h3>Most visited pleasure places</h3>
+            <div class="suggestion-place-container">
+                <div class="suggestion-button-container">
+                    <div id="previous-button" class="suggestion-button-wrapper">
+                        <button><i class="bi bi-arrow-left-short icon"></i></button>
+                    </div>
+                </div>
+
+                <div class="slideshow-card-container"></div>
+
+                <div class="suggestion-button-container">
+                    <div id="next-button" class="suggestion-button-wrapper">
+                        <button><i class="bi bi-arrow-right-short icon"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer></footer>
+
+    <modal></modal>
+
+</body>
+</html>

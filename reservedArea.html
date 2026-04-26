@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/favicon-light.svg" type="image/x-icon" media="(prefers-color-scheme: light)">
+    <link rel="shortcut icon" href="assets/img/favicon.svg" type="image/x-icon" media="(prefers-color-scheme: dark)">
+    <title>Reserved area • Nomadi</title>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/script/DOM_footer.js" defer></script>
+    <script type="text/javascript" src="assets/script/modal.js" defer></script>
+    <script type="text/javascript" src="assets/script/verifyLog.js" defer></script>
+    <script type="text/javascript" src="assets/script/reservedArea.js" defer></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/style/reset.css">
+    <link rel="stylesheet" href="assets/style/globalSettings.css">
+    <link rel="stylesheet" href="assets/style/modal.css">
+    <link rel="stylesheet" href="assets/style/reservedArea.css">
+</head>
+<body>
+
+    <main>
+        <aside>
+            <div class="reserved-menu-container">
+                <label for="myAccount">
+                    <input type="radio" name="menuReserved" value="myAccount" id="myAccount">
+                    <span class="radio-menu-span">
+                        <i class="bi bi-person icon-smaller"></i>
+                        <h3>My account</h3>
+                    </span>
+                </label><hr class="first-hr">
+                <label for="myTravels">
+                    <input type="radio" name="menuReserved" value="myTravels" id="myTravels">
+                    <span class="radio-menu-span">
+                        <i class="bi bi-airplane icon-smaller"></i>
+                        <h3>My travels</h3>
+                    </span>
+                </label><hr class="second-hr">
+            </div>
+            <div class="back-menu-reserved-container">
+                <button onclick="home()">
+                    <i class="bi bi-house icon-smaller"></i>
+                    <h3>Home</h3>
+                </button>
+                <button onclick="logout()">
+                    <i class="bi bi-box-arrow-left icon-smaller"></i>
+                    <h3>Log out</h3>
+                </button>
+            </div>
+        </aside>
+
+        <article></article>
+        
+
+    </main>
+
+    <footer></footer>
+
+    <modal>
+        <div class="modal-container"></div>
+    </modal>
+
+</body>
+</html>

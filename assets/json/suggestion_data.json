@@ -1,0 +1,109 @@
+{
+  "data": [
+    {
+      "img": "assets/img/suggestion_pic/italy/rome.jpeg",
+      "city": "Rome", 
+      "temperature": "mediterranean",
+      "thermometer": "bi bi-thermometer-high",
+      "description": "The eternal city, rich in history and culture"
+    },
+    { 
+      "img": "assets/img/suggestion_pic/italy/venice.jpeg",
+      "city": "Venice", 
+      "temperature": "maritime tempered",
+      "thermometer": "bi bi-thermometer-half",
+      "description": "The city of canals and bridges"
+    },
+    { 
+      "img": "assets/img/suggestion_pic/italy/florence.jpeg",
+      "city": "Florence", 
+      "temperature": "mediterranean",
+      "thermometer": "bi bi-thermometer-high",
+      "description": "The cradle of the Renaissance"
+    },
+    { 
+      "img": "assets/img/suggestion_pic/france/paris.jpeg",
+      "city": "Paris", 
+      "temperature": "tempered oceanic",
+      "thermometer": "bi bi-thermometer-low",
+      "description": "The city of lights"
+    },
+    { 
+      "img": "assets/img/suggestion_pic/france/nice.jpeg",
+      "city": "Nice", 
+      "temperature": "tempered",
+      "thermometer": "bi bi-thermometer-low",
+      "description": "The capital of the French Riviera"
+    },
+    { 
+      "img": "assets/img/suggestion_pic/france/lyon.jpeg",
+      "city": "Lyon", 
+      "temperature": "tempered oceanic",
+      "thermometer": "bi bi-thermometer-low",
+      "description": "The gastronomic capital of France"
+    },
+    { 
+      "img": "assets/img/suggestion_pic/germany/berlin.jpeg",
+      "city": "Berlin", 
+      "temperature": "tempered continental",
+      "thermometer": "bi bi-thermometer-half",
+      "description": "The capital and largest city of Germany"
+    },
+    {   
+      "img": "assets/img/suggestion_pic/germany/munich.jpeg",
+      "city": "Munich", 
+      "temperature": "tempered continental",
+      "thermometer": "bi bi-thermometer-half",
+      "description": "Famous for its Oktoberfest and beer gardens"
+    },
+    { 
+      "img": "assets/img/suggestion_pic/germany/hamburg.jpeg",
+      "city": "Hamburg", 
+      "temperature": "maritime tempered",
+      "thermometer": "bi bi-thermometer-half",
+      "description": "The second-largest city in Germany"
+    },
+    { 
+      "img": "assets/img/suggestion_pic/usa/new-york.jpeg",
+      "city": "New York", 
+      "temperature": "moist continental",
+      "thermometer": "bi bi-thermometer-high",
+      "description": "The city that never sleeps"
+    },
+    { 
+      "img": "assets/img/suggestion_pic/usa/los-angeles.jpeg",
+      "city": "Los Angeles", 
+      "temperature": "mediterranean",
+      "thermometer": "bi bi-thermometer-half",
+      "description": "The entertainment capital of the world"
+    },
+    { 
+      "img": "assets/img/suggestion_pic/usa/chicago.jpeg",
+      "city": "Chicago", 
+      "temperature": "moist continental",
+      "thermometer": "bi bi-thermometer-high",
+      "description": "The windy city"
+    },
+    { 
+      "img": "assets/img/suggestion_pic/japan/tokyo.jpeg",
+      "city": "Tokyo", 
+      "temperature": "mediterranean",
+      "thermometer": "bi bi-thermometer-high",
+      "description": "Neon lights & ancient temples"
+    },
+    { 
+      "img": "assets/img/suggestion_pic/japan/kyoto.jpeg",
+      "city": "Kyoto", 
+      "temperature": "tempered",
+      "thermometer": "bi bi-thermometer-low",
+      "description": "Serene temples & traditional gardens"
+    },
+    { 
+      "img": "assets/img/suggestion_pic/japan/osaka.jpeg",
+      "city": "Osaka", 
+      "temperature": "moist",
+      "thermometer": "bi bi-thermometer-high",
+      "description": "Lively nightlife & vibrant culture"
+    }
+  ]
+}  

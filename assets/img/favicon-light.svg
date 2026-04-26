@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Livello_2" data-name="Livello 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 126.33 125.5">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #252525;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="Livello_1-2" data-name="Livello 1">
+    <g>
+      <ellipse class="cls-1" cx="62.75" cy="62.78" rx="61.75" ry="61.55"/>
+      <ellipse class="cls-1" cx="63.25" cy="62.78" rx="52.25" ry="61.55"/>
+      <ellipse class="cls-1" cx="63.25" cy="62.78" rx="41.25" ry="61.55"/>
+      <ellipse class="cls-1" cx="63.25" cy="62.78" rx="29.25" ry="61.55"/>
+      <ellipse class="cls-1" cx="63.25" cy="62.78" rx="19.25" ry="61.55"/>
+      <ellipse class="cls-1" cx="63.5" cy="62.72" rx="8.5" ry="61.55"/>
+      <ellipse class="cls-1" cx="63.72" cy="62.75" rx="61.55" ry="61.75"/>
+      <ellipse class="cls-1" cx="63.72" cy="63.25" rx="61.55" ry="52.25"/>
+      <ellipse class="cls-1" cx="63.72" cy="63.25" rx="61.55" ry="41.25"/>
+      <ellipse class="cls-1" cx="63.72" cy="63.25" rx="61.55" ry="29.25"/>
+      <ellipse class="cls-1" cx="63.72" cy="63.25" rx="61.55" ry="19.25"/>
+      <ellipse class="cls-1" cx="63.78" cy="63.5" rx="61.55" ry="8.5"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,250 @@
+@import url('globalSettings.css');
+/**main hotel details settings*/
+main {
+    min-height: 100vh;
+}
+/**title hotel details settings*/
+.hotel-title {
+    margin-inline: var(--margin);
+}
+/**main-photo hotel details settings*/
+.main-photo {
+    width: calc(100% - (var(--margin-small) * 2));
+    height: 35rem;
+    margin-inline: var(--margin-small);
+    margin-top: var(--margin-smaller);
+    background: var(--txt-clr);
+    border-radius: var(--radius);
+    padding: var(--padding);
+    display: flex;
+    gap: var(--gap-big);
+}
+
+.benefits-container {
+    flex: 1;
+    height: 100%;
+    border-top-left-radius: var(--radius-small);
+    border-bottom-left-radius: var(--radius-small);
+    padding: var(--padding-medium);
+    position: relative;
+}
+.benefits {
+    width: 100%;
+    display: flex;
+    gap: var(--gap-big);
+    margin-top: var(--margin-smaller);
+    flex-wrap: wrap;
+}
+.benefit {
+    display: flex;
+    align-items: center;
+    gap: var(--gap);
+    border: solid 2px var(--secondary-clr);
+    padding: var(--padding-smaller);
+    width: fit-content;
+    transition: var(--main-transition);
+    cursor: default;
+}
+.benefit:hover {
+    background: var(--secondary-clr);
+}
+.benefits-container h2, .benefit i, .benefit h3, .info-hotel h5, .comment-title h6, .pros-and-cons h4, .comment-wrapper h3, #price-button h2 {
+    color: var(--bg-clr) !important;
+}
+.benefit h3 {
+    font-weight: var(--font-weight-light) !important;
+    width: fit-content;
+}
+
+.main-photo-container {
+    flex: 3;
+    height: 100%;
+    border-top-right-radius: var(--radius-small);
+    border-bottom-right-radius: var(--radius-small);
+    overflow: hidden;
+}
+.main-photo-container img, .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info-hotel {
+    position: absolute;
+    bottom: 0;
+}
+/**photo scroller hotel details settings*/
+.photo-scroller {
+    width: calc(100% - (var(--margin-small) * 2));
+    height: 7rem;
+    margin-inline: var(--margin-small);
+    margin-top: calc(var(--margin-smaller) * 2);
+    backdrop-filter: blur(2px);
+    box-shadow: var(--spread-shadow);
+    display: flex;
+    gap: var(--gap);
+    padding: var(--padding-small);
+}
+
+.photo-button-wrapper {
+    height: 100%;
+    width: 50px;
+}
+.photo-button-wrapper button {
+    height: inherit;
+    width: 100%;
+    background: none;
+}
+.photo-button-wrapper:hover {
+    background: var(--bg-clr-100);
+}
+
+.other-photo-container {
+    height: 100%;
+    flex: 1;
+    overflow: hidden;
+    overflow-x: scroll;
+    display: flex;
+    align-items: center;
+    gap: var(--gap);
+}
+.photo {
+    height: 100%;
+    min-width: 10.5rem;
+    cursor: pointer;
+    transition: var(--main-transition);
+}
+.photo img{
+    filter: grayscale(1);
+    transition: var(--main-transition);
+}
+.other-photo-container:hover > :not(:hover) {
+    transform: scale(.95);
+    filter: grayscale(1);
+}
+.photo img:hover{
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+.selected-photo img {
+    filter: grayscale(0);
+}
+/**description hotel details settings*/
+.hotel-content {
+    width: calc(100% - (var(--margin-small) * 2));
+    height: fit-content;
+    margin-inline: var(--margin-small);
+    display: flex;
+    gap: var(--gap-big);
+    justify-content: space-between;
+}
+.description-container {
+    flex: 3;
+    min-height: 30rem;
+}
+.hotel-description {
+    margin-top: calc(var(--margin-smaller) * 2);
+    margin-bottom: var(--margin-small);
+}
+/**comment hotel details settings*/
+.comment-wrapper {
+    flex: 1.5;
+    min-height: 15rem;
+    max-height: 30rem;
+    background: var(--secondary-clr);
+    border-radius: var(--radius);
+    overflow: hidden;
+    padding: var(--padding-medium);
+    position: relative;
+}
+
+.comment-container {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    border-radius: var(--radius-small);
+}
+
+.hotel-description, .comment-content h3 {
+    font-weight: var(--font-weight-regular) !important;
+    font-size: var(--font-size-regular-big) !important;
+    text-wrap: balance;
+}
+
+.comment {
+    min-height: 10rem;
+    background: var(--accent-clr);
+    padding: var(--padding-small);
+    border-radius: var(--radius-small);
+    margin-top: calc(var(--margin-smaller) * 2);
+}
+.comment-title {
+    line-height: 1.5rem;
+}
+.comment-title hr {
+    border: solid 1px var(--bg-clr);
+    border-radius: var(--radius-bigger);
+}
+
+.comment-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+}
+.pros-and-cons h4 {
+    font-size: var(--font-size-regular);
+    margin-left: calc(var(--margin-smaller) * 2);
+}
+/**price hotel details settings*/
+.price-container {
+    width: calc(100% - (var(--margin-small) * 2));
+    height: 5rem;
+    margin-inline: var(--margin-small);
+    margin-top: var(--margin-small);
+    backdrop-filter: blur(3px);
+    box-shadow: var(--spread-shadow);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--padding-medium);
+    border: solid 1px var(--txt-clr);
+    background: var(--bg-clr-transparent);
+    position: sticky;
+    bottom: 50px;
+}
+#price-button {
+    width: 10rem;
+    height: 100%;
+    background: var(--primary-clr);
+}
+#price-button:hover {
+    background: var(--primary-clr-100);
+}
+/**error hotel details settings*/
+.hotel-error {
+    width: 100%;
+    height: 13rem;
+    margin-top: calc(var(--margin-smaller) * 2);
+    display: flex;
+    padding: var(--padding-medium);
+    gap: var(--gap-big);
+    backdrop-filter: blur(2px);
+    box-shadow: var(--main-shadow);
+    cursor: pointer;
+    transition: var(--main-transition);
+    opacity: 0;
+    animation: fadeIn 2s var(--delay) var(--complicated-transition) forwards;
+}
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+.hotel-error {
+    justify-content: center;
+    align-items: center;
+    box-shadow: none;
+}
+.hotel-error h1 {
+    color: var(--accent-clr)
+}

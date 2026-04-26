@@ -1,0 +1,306 @@
+@import url('globalSettings.css');
+/**main reserved area settings*/
+main {
+    min-height: 100vh;
+    margin-bottom: 0;
+    display: flex;
+}
+/**menu reserved area settings*/
+aside {
+    height: 100vh;
+    flex: .8;
+    position: relative;
+    background: linear-gradient(to left, transparent 0%, var(--txt-clr) 200%);
+}
+.reserved-menu-container {
+    width: 80%;
+    margin: var(--margin-small) calc(var(--margin-smaller) * 4);
+}
+
+.back-menu-reserved-container {
+    width: 80%;
+    margin-inline: calc(var(--margin-smaller) * 4);
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+}
+.back-menu-reserved-container button {
+    display: flex;
+    align-items: center;
+    gap: var(--gap-big);
+    background: none;
+    border-radius: var(--radius-smaller);
+    border: solid 1.5px var(--txt-clr);
+    margin-top: var(--margin-smaller);
+}
+.back-menu-reserved-container button:hover {
+    border: solid 1.5px var(--primary-clr);
+    h3, i {
+        color: var(--primary-clr);
+    }
+}
+.back-menu-reserved-container button:last-child:hover {
+    border: solid 1.5px var(--accent-clr);
+    h3, i {
+        color: var(--accent-clr);
+    }
+}
+
+.reserved-menu-container hr, .back-menu-reserved-container hr {
+    border: var(--txt-clr) 1px solid;
+    border-radius: var(--radius-bigger);
+}
+.first-hr {
+    width: 70%;
+}
+.second-hr {
+    width: 60%;
+}
+.third-hr {
+    width: 40%;
+}
+.fourth-hr {
+    width: 50%;
+}
+
+input[type="radio"] {
+    display: none;
+}
+.radio-menu-span {
+    display: flex;
+    gap: var(--gap-big);
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    padding: var(--padding-medium);
+    border-radius: var(--radius-smaller);
+}
+input[type="radio"]:checked + .radio-menu-span, .radio-menu-span:hover{
+    background: var(--txt-clr-100);
+    h3, i {
+        color: var(--bg-clr);
+    }
+}
+/**content reserved area settings*/
+article {
+    height: 100vh;
+    flex: 3;
+    margin: 0;
+    overflow: scroll;
+}
+.aricle-container {
+    padding: calc(var(--margin-smaller) * 4);
+}
+/**account reserved area settings*/
+.title-account {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 18rem;
+    margin-bottom: calc(var(--margin-smaller) * 4);
+    background: var(--txt-clr-transparent);
+    backdrop-filter: blur(3px);
+    border-radius: var(--radius);
+    padding: var(--padding-bigger);
+}
+.title-account h1, .title-account i, .title-account h5 {
+    color: var(--bg-clr) !important;
+}
+.content-account {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: var(--margin-small);
+    margin-inline: var(--margin-bigger);
+    justify-content: center;
+    gap: var(--gap-big);
+    position: relative;
+}
+.content-account .login-input  {
+    width: 40%;
+}
+
+.button-account-container {
+    display: flex;
+    gap: var(--gap);
+    justify-content: center;
+    margin-inline: var(--margin-bigger);
+    margin-top: var(--margin-small);
+}
+
+.button-account-container button, #done {
+    padding: var(--padding-medium);
+    background: var(--primary-clr);
+    display: flex;
+    gap: var(--gap);
+    align-items: center;
+}
+#done {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 13rem;
+    display: none;
+}
+.button-account-container button:hover, #done:hover {
+    background: var(--primary-clr-100);
+}
+
+.delete {
+    background: var(--accent-clr) !important;
+}
+.delete:hover {
+    background: var(--accent-clr-100) !important;
+}
+
+.button-account-container button h4, .button-account-container button i, #done h4, #done i{
+    color: var(--bg-clr) !important;
+}
+.button-account-container button h4 {
+    font-weight: var(--font-weight-bold) !important;
+}
+/**travels reserved area settings*/
+.travels-content {
+    height: calc(100% - (var(--margin-smaller) * 8) - 18rem);
+}
+
+.trip-container {
+    width: 100%;
+    height: 12.5rem;
+    backdrop-filter: blur(2px);
+    box-shadow: var(--main-shadow);
+    display: flex;
+    margin-block: calc(var(--margin-smaller) * 2);
+    cursor: pointer;
+    border: solid 1.5px var(--txt-clr);
+    transition: var(--main-transition);
+}
+.trip-container:hover {
+    transform: scale(1.02);
+    .trip-photo img {
+        filter: grayscale(0);
+    }
+}
+
+.trip-photo {
+    flex: 1;
+}
+.trip-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(.7);
+    transition: var(--main-transition);
+}
+
+.trip-content {
+    flex: 2.5;
+    padding: var(--padding-medium);
+    position: relative;
+}
+.hotel {
+    width: 30rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.start-end, .place-info, .people-trip {
+    display: flex;
+    align-items: center;
+    gap: var(--gap-bigger);
+}
+.place-info {
+    justify-content: space-between;   
+}
+.start-end {
+    width: fit-content;
+    margin-top: var(--margin-smaller);
+    padding: var(--padding-small);
+    border-radius: var(--radius-smaller);
+    border: solid 1.5px var(--txt-clr)
+}
+.people-trip {
+    width: calc(100% - var(--padding-medium) * 2);
+    justify-content: space-between;
+    position: absolute;
+    bottom: var(--padding-medium);
+}
+
+#deleteTrip {
+    padding: var(--padding-small);
+    background: var(--accent-clr);
+}
+#deleteTrip:hover {
+    background: var(--accent-clr-100);
+}
+#deleteTrip i {
+    color: var(--bg-clr) !important;
+}
+
+.no-result {
+    height: 8rem;
+    backdrop-filter: blur(2px);
+    box-shadow: var(--main-shadow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: solid 1.5px var(--txt-clr);
+    border-radius: var(--radius-smaller);
+    cursor: pointer;
+    transition: var(--main-transition);
+}
+.no-result:hover {
+    background: var(--secondary-clr);
+    h1, h5 {
+        color: var(--bg-clr)  !important;
+    }
+}
+.no-result h1, .no-result h5 {
+    color: var(--secondary-clr) !important;
+}
+/**modal reserved area settings*/
+.modal-container {
+    height: fit-content;
+    padding: var(--padding-bigger);
+    flex-direction: column;
+    align-items: center;
+    transition: var(--main-transition);
+}
+.modal-container h1, .modal-container h2 {
+    text-transform: uppercase;
+}
+.modal-container hr {
+    border: solid 1px var(--txt-clr);
+    width: 100%;
+    margin-block: var(--margin-thin);
+}
+
+.monument-container {
+    width: 100%;
+    display: flex;
+    gap: var(--gap-bigger);
+    margin-block: var(--margin-smaller);
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: var(--padding-medium);
+    text-align: right;
+}
+.monument-container:hover {
+    background: var(--bg-clr-100);
+}
+.hour {
+    display: flex;
+    align-items: center;
+    gap: var(--gap);
+}
+.hour h3 {
+    width: fit-content;
+    text-wrap: nowrap;
+}
+
+.location {
+    color: var(--primary-clr) !important;
+}

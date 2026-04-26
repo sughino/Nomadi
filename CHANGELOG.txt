@@ -1,0 +1,63 @@
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+## [Unreleased]
+
+## [Version 1.0] - 01-05-2024
+
+*First version of programm
+
+
+## [Version 1.1] - 09-05-2024
+
+### Added
+
+- Some options
+- Login form
+
+### Fixed
+
+- Graphics
+
+## [Version 2.0] - 14-05-2024
+
+- New entire site
+
+### Fixed
+
+- Graphics
+- Search of the hotel
+
+
+## [Version 2.1] - 01-06-2024
+
+### Added
+
+- Page for searched hotel
+
+## [Version 2.2] - 03-06-2024
+
+### Added
+
+- Hotel description page
+- Hotel Details page
+
+## [Version 2.3] - 04-06-2024
+
+### Added
+
+- Login form
+- Reserved page
+
+## [Version 3.0] - 05-06-2024
+
+### Added
+
+- Trip planning
+
+### fixed
+
+- adjustment of some stuff
+
+## [Relaesed]
